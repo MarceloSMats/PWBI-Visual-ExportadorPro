@@ -1,0 +1,78 @@
+{
+  "dataRoles": [
+    {
+      "name": "columns",
+      "kind": "Grouping",
+      "displayName": "Colunas"
+    },
+    {
+      "name": "measures",
+      "kind": "Measure",
+      "displayName": "Medidas"
+    },
+    {
+      "name": "headerMeasure",
+      "kind": "Measure",
+      "displayName": "Medida do Cabeçalho"
+    }
+  ],
+  "dataViewMappings": [
+    {
+      "table": {
+        "rows": {
+          "select": [
+            {
+              "for": {
+                "in": "columns"
+              }
+            },
+            {
+              "for": {
+                "in": "measures"
+              }
+            },
+            {
+              "for": {
+                "in": "headerMeasure"
+              }
+            }
+          ],
+          "dataReductionAlgorithm": {
+            "top": {
+              "count": 30000
+            }
+          }
+        }
+      }
+    }
+  ],
+  "objects": {
+    "exportSettings": {
+      "displayName": "Configurações",
+      "properties": {
+        "fileType": {
+          "displayName": "Formato",
+          "type": {
+            "enumeration": [
+              {
+                "value": "csv",
+                "displayName": "CSV"
+              },
+              {
+                "value": "xlsx",
+                "displayName": "Excel (.xlsx)"
+              }
+            ]
+          }
+        },
+        "fileName": {
+          "displayName": "Nome do Arquivo",
+          "type": {
+            "text": true
+          }
+        }
+      }
+    }
+  },
+  "privileges": []
+}

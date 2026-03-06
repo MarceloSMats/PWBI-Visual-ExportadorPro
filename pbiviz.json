@@ -1,0 +1,24 @@
+{
+  "visual": {
+    "name": "ExportadorPro",
+    "displayName": "Exportador Pro",
+    "guid": "exportadorPro12345",
+    "visualClassName": "Visual",
+    "version": "1.0.0.0",
+    "description": "Visual para exportar CSV/XLSX com cabeçalho dinâmico",
+    "supportUrl": "https://example.com/support",
+    "gitHubUrl": ""
+  },
+  "apiVersion": "5.3.0",
+  "author": {
+    "name": "Marcelo Seiji de Melo Matsumura",
+    "email": "marcelo.matsumura@gmail.com"
+  },
+  "assets": {
+    "icon": "assets/icon.png"
+  },
+  "style": "style/visual.less",
+  "capabilities": "capabilities.json",
+  "dependencies": "dependencies.json",
+  "stringResources": []
+}
